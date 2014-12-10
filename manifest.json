@@ -1,0 +1,17 @@
+{
+    "manifest_version" : 2,
+    "name": "Spike",
+    "version": "0.1",
+    "background": { "scripts": ["background.js"] },
+    "permissions": ["tabs","http://*/*", "https://*/*"],
+    "description": "First Test",
+    "browser_action": 
+    {
+        "default_icon": "bag.png",
+        "default_popup": "popup.html",
+        "default-title": "SelectAll"
+    }
+    
+
+
+}
