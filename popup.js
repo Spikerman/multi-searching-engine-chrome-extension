@@ -1,9 +1,12 @@
+var Istore=localStorage.input || '';
 window.onload=function()
 {
-	localStorage.input=document.getElementById("search").value；
-    
+   
     document.getElementById("submit").onclick=function()
+    
     {
-        chrome.extension.sendMessage({command:"start",input:localStorage.input});
+        var input=Istore;
+        chrome.extension.sendMessage({command:"start",input:input});
     }
+
 }
