@@ -19,7 +19,6 @@ var openTab=function()
 	(
 		{
 			url:"http://www.baidu.com",
-			tabId:1
 		}
 
 	);
