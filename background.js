@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(
         switch(request.command)
         {
             case "start":
-            	openTab();
+            	openTab(request.input);
                 break;
         }
 
@@ -13,12 +13,12 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
-var openTab=function()
+var openTab=function(input)
 {
 	chrome.windows.create
 	(
 		{
-			url:"http://www.baidu.com",
+			url:"http://www.baidu.com/s?wd="+input,
 		}
 
 	);

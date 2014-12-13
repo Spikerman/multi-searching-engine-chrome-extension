@@ -1,7 +1,9 @@
 window.onload=function()
 {
-	document.getElementById("submit").onclick=function()
+	localStorage.input=document.getElementById("search").value；
+    
+    document.getElementById("submit").onclick=function()
     {
-        chrome.extension.sendMessage({command:"start"});
+        chrome.extension.sendMessage({command:"start",input:localStorage.input});
     }
 }
