@@ -6,7 +6,7 @@ window.onload=function()
     
     {
         var input=Istore;
-        chrome.extension.sendMessage({command:"start",input:input});
+        chrome.runtime.sendMessage({command:"start",input:input});
     }
 
 }
