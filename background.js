@@ -1,12 +1,12 @@
 
-chrome.extension.onMessage.addListener(
+chrome.runtime.onMessage.addListener(
     function(request,sender,sendResponse)
     {
         switch(request.command)
         {
-            case "command":
+            case "start":
             	openTab();
-            break;
+                break;
         }
 
         return true;
