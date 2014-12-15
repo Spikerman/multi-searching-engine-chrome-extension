@@ -1,4 +1,3 @@
-//var Istore=localStorage.input;
 window.onload=function()
 {
    
