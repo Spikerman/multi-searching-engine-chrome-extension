@@ -1,11 +1,12 @@
-var Istore=localStorage.input || '';
+//var Istore=localStorage.input;
 window.onload=function()
 {
    
     document.getElementById("submit").onclick=function()
     
     {
-        var input=Istore;
+        var search=document.getElementById("search");
+        var input=search.value;
         chrome.runtime.sendMessage({command:"start",input:input});
     }
 
